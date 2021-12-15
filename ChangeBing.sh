@@ -11,6 +11,11 @@ wget -t 5 --no-check-certificate  $link -qO $tmpfile
 rm -rf /usr/syno/etc/login_background*.jpg
 cp -f $tmpfile /usr/syno/etc/login_background.jpg &>/dev/null
 cp -f $tmpfile /usr/syno/etc/login_background_hd.jpg &>/dev/null
+cp -f $tmpfile /usr/syno/synoman/webman/resources/images/default_wallpaper/01.jpg &>/dev/null
+cp -f $tmpfile /usr/syno/synoman/webman/resources/images/1x/default_wallpaper/dsm7_01.jpg &>/dev/null
+cp -f $tmpfile /usr/syno/synoman/webman/resources/images/2x/default_wallpaper/dsm7_01.jpg &>/dev/null
+cp -f $tmpfile /usr/syno/synoman/webman/resources/images/1x/default_wallpaper/dsm7_02.jpg &>/dev/null
+cp -f $tmpfile /usr/syno/synoman/webman/resources/images/2x/default_wallpaper/dsm7_02.jpg &>/dev/null
 title=$(echo $pic|sed 's/.\+"title":"//g'|sed 's/".\+//g')
 copyright=$(echo $pic|sed 's/.\+"copyright[:" ]\+//g'|sed 's/".\+//g')
 word=$(echo $copyright|sed 's/(.\+//g')
